@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Mapuche</title>
+
+<style>
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  height: 100vh; /* ADICIONADO */
+  background: url("sua-imagem2.jpg") center/cover no-repeat;
+  background-attachment: fixed; /* ADICIONADO */
+  overflow: hidden;
+  font-family: Arial;
+  color: white;
+}
+
+/* mapa escondido no começo */
+.mapa {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: aparecer 3s forwards;
+  pointer-events: none;
+
+  display: flex;               /* ADICIONADO */
+  justify-content: center;     /* ADICIONADO */
+  align-items: center;         /* ADICIONADO */
+}
+
+/* mapa imagem */
+.mapa img {
+  width: 80%;                  /* ALTERADO (era 100%) */
+  max-width: 500px;            /* ADICIONADO */
+  height: auto;                /* ADICIONADO */
+  filter: drop-shadow(0 0 20px gold);
+}
+
+/* texto */
+.texto {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  text-align: center;
+  opacity: 0;
+  animation: texto 2s forwards;
+  animation-delay: 2s;
+
+  z-index: 2; /* ADICIONADO (fica por cima do mapa) */
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.frase {
+  font-size: 18px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: gold;
+  border: none;
+  cursor: pointer;
+}
+
+/* animações */
+@keyframes aparecer {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes texto {
+  to {
+    opacity: 1;
+    top: 35%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="mapa">
+  <img src="seu-mapa.png">
+</div>
+
+<div class="texto">
+  <div class="frase">Eles já estavam aqui antes de tudo.</div>
+  <h1>POVO MAPUCHE</h1>
+  <button onclick="window.location.href='pagina1.html'">Explorar</button>
+</div>
+
+</body>
+</html>
