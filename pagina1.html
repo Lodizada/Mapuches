@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Mapuche</title>
+<link rel="stylesheet" href="pagina1.css">
+
+<!-- fonte bonita -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+  <h1>Povos Mapuches</h1>
+</header>
+
+<section class="conteudo">
+
+  <p>
+    Os mapuches viviam no sul do Chile e da Argentina, em uma região chamada Wallmapu.
+    Sua cultura era baseada na forte conexão com a natureza e no equilíbrio com o ambiente.
+  </p>
+
+  <div class="quadro">
+  <div class="mapas">
+
+    <img src="Mapuche.png" class="mapuche">
+<img src="Argentina.png" class="argentina">
+
+  </div>
+</div>
+
+  <button onclick="proxima()">Próxima</button>
+
+</section>
+
+<script>
+function zoomMapuche(img) {
+  img.classList.toggle("ativo");
+}
+
+function proxima() {
+  window.location.href = "pagina2.html";
+}
+</script>
+
+</body>
+</html>
