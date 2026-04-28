@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  background: linear-gradient(to bottom, #000000, #0a0a0a);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* topo */
+header {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+h1 {
+  margin: 0;
+}
+
+/* conteúdo */
+.conteudo {
+  text-align: center;
+  padding: 30px;
+}
+
+h2 {
+  color: gold;
+  margin-top: 30px;
+}
+
+p {
+  max-width: 600px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+/* imagem */
+.imagem-container {
+  margin: 30px auto;
+  max-width: 400px;
+  cursor: pointer;
+}
+
+.imagem-container img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.4s;
+  box-shadow: 0 0 10px rgba(255,215,0,0.2);
+}
+
+/* zoom */
+.imagem-container img.zoom {
+  transform: scale(1.5);
+  box-shadow: 0 0 30px gold;
+}
+
+/* lista */
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+li {
+  margin: 10px 0;
+  opacity: 0.9;
+}
+
+/* botão */
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: gold;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px gold;
+}
