@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Mapuche - Cultura</title>
+<link rel="stylesheet" href="pagina2.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+  <h1>Cultura Mapuche</h1>
+</header>
+
+<section class="conteudo">
+
+  <h2>As Rucas</h2>
+  <p>
+    As casas dos mapuches eram chamadas de rucas. Eram feitas com madeira, palha e barro, 
+    em formato oval ou retangular. Tinham um espaço único, sem divisões internas, 
+    com fogo no centro para aquecer e cozinhar.
+  </p>
+
+  <!-- IMAGEM -->
+  <div class="imagem-container" onclick="toggleZoom(event)">
+    <img src="imagem-casa-mapuche.jpg" id="imgCasa">
+  </div>
+
+  <h2>Curiosidades</h2>
+
+  <ul>
+    <li>O nome “mapuche” significa “povo da terra”.</li>
+    <li>Eles viviam principalmente no sul do Chile e da Argentina.</li>
+    <li>Resistiram por muito tempo à conquista espanhola.</li>
+    <li>A natureza é muito importante na cultura deles.</li>
+    <li>Ainda existem mapuches hoje, mantendo tradições.</li>
+  </ul>
+
+  <button onclick="window.location.href='pagina3.html'">Próxima</button>
+
+</section>
+
+<script>
+function toggleZoom(e) {
+  const img = document.getElementById("imgCasa");
+
+  if (e.target === img) {
+    img.classList.toggle("zoom");
+  } else {
+    img.classList.remove("zoom");
+  }
+}
+
+
+</script>
+
+</body>
+</html>
